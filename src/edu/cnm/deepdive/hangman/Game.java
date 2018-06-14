@@ -51,14 +51,8 @@ public class Game {
     }else if (sb_display.indexOf("_") == -1){
       return current_word + "\t WON!";
     }
-    StringBuilder guesses_status = new StringBuilder("\t|");
-    for (int i = 0; i < TOTAL_GUESSES; i++) {
-      if (i < guesses_left){
-        guesses_status.append("T");
-      }else{
-        guesses_status.append(" ");
-      }
-    }
+    StringBuilder guesses_status = new StringBuilder(
+	"\tGuesses left: " + Integer.toString(guesses_left));
     guesses_status.append("|");
     return sb_display.toString() + guesses_status.toString();
   }
