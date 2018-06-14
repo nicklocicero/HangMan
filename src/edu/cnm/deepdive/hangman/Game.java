@@ -54,7 +54,7 @@ public class Game {
     StringBuilder guesses_status = new StringBuilder("\t|");
     for (int i = 0; i < TOTAL_GUESSES; i++) {
       if (i < guesses_left){
-        guesses_status.append("*");
+        guesses_status.append("T");
       }else{
         guesses_status.append(" ");
       }
