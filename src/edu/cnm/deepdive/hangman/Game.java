@@ -53,7 +53,6 @@ public class Game {
     }
     StringBuilder guesses_status = new StringBuilder(
 	"\tGuesses left: " + Integer.toString(guesses_left));
-    guesses_status.append("|");
     return sb_display.toString() + guesses_status.toString();
   }
 
